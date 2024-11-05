@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: lightblue;
+      overflow-x: hidden;
+    }
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 360px;
+      height: 500px;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+    .card img {
+      width: 330px;
+      height: 60%;
+      margin-top: 15px;
+      border-radius: 10px;
+    }
+    .card h2 {
+      margin: 0 20px;
+      text-align: center;
+    }
+    .card p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      margin: 0 40px;
+      text-align: center;
+      font-size: 15px;
+    }
+    @media screen and (max-width: 375px){
+      .card{
+      width: 300px;
+      height: 480px;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .card img {
+      width: 280px;
+      height: 55%;
+      margin-top: 10px;
+      border-radius: 20px;
+    }
+    .card h2 {
+      margin: 0 10px;
+      text-align: center;
+    }
+    .card p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 400;
+      margin: 0 20px;
+      text-align: center;
+      font-size: 15px;
+    }
+    }
+    </style>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="images/image-qr-code.png" alt="image-qr-code">
+      <h2>Improve your front end skills by building projects</h2>
+      <p>
+        Scan the QR Code to visit Front End mentor and 
+        take your coding skill to next level
+      </p>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Suleiman-Oz">Suleiman</a>.
+  </div>
+</body>
+</html>
